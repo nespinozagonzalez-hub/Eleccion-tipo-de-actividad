@@ -10,7 +10,7 @@ Sitio estático: HTML, CSS y JavaScript nativo, sin compilación ni servicios ex
 python -m http.server 8765
 ```
 
-Abre `http://localhost:8765/`. Se publica en GitHub Pages desde la raíz de `main`. Todas las rutas de recursos son relativas, por lo que el sitio funciona al renombrar el repositorio. La URL de Pages cambiará con el nuevo nombre.
+Abre `http://localhost:8765/`. GitHub Pages está configurado para publicar la carpeta `docs/` de `main`. Esa carpeta contiene la versión canónica del sitio; la entrada de la raíz solo dirige allí al revisar localmente. Todas las rutas de recursos son relativas, por lo que el sitio funciona al renombrar el repositorio. La URL de Pages cambiará con el nuevo nombre.
 
 ## Contenido y funcionamiento
 
@@ -32,12 +32,12 @@ El navegador puede impedir el almacenamiento, especialmente dentro de ciertos if
 
 ## Editar
 
-- `content.js`: textos, casos, respuestas, citas, códigos, criaturas e insignias.
-- `app.js`: interfaz y navegación.
-- `core.js`: normalización de partidas y lógica de turnos.
-- `styles.css`: responsive, ilustraciones, animación y estilos de impresión.
-- `assets/arenas.png`: atlas 2×2 de escenarios y entrenadores.
-- `assets/creatures-v2.png`: atlas 2×2 con transparencia de las cuatro bioformas.
+- `docs/content.js`: textos, casos, respuestas, citas, códigos, criaturas e insignias.
+- `docs/app.js`: interfaz y navegación.
+- `docs/core.js`: normalización de partidas y lógica de turnos.
+- `docs/styles.css`: responsive, ilustraciones, animación y estilos de impresión.
+- `docs/assets/arenas.png`: atlas 2×2 de escenarios y entrenadores.
+- `docs/assets/creatures-v2.png`: atlas 2×2 con transparencia de las cuatro bioformas.
 
 Fuentes verificadas el 20 de octubre de 2026: Abeysekera y Dawson (2015), van Alten et al. (2019), Brame (2016), Freeman et al. (2014), Nicol y Macfarlane-Dick (2006). Citas y enlaces se presentan en las escenas y en la biblioteca. La narrativa, los casos y las aplicaciones son creación de esta experiencia. Las evidencias STEM y las propuestas teóricas se presentan con su alcance explícito.
 

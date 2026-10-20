@@ -2,11 +2,11 @@
 
 Herramienta: generación de imágenes integrada. Dos atlas creados para este proyecto el 20 de octubre de 2026. Los PNG originales se copiaron sin modificar y se usan mediante recortes CSS; no requieren servicios externos.
 
-## `assets/arenas.png`
+## `docs/assets/arenas.png`
 
 Prompt: “Use case: illustration-story. Create a single polished environment atlas asset for an original educational creature-collecting RPG, mature beautiful 16-bit pixel-art meets graphic novel, no existing franchise characters. ONE square atlas with exactly 2 by 2 equal square tiles aligned edge-to-edge, each tile independently composed with safe framing inside its quadrant, absolutely no text, no labels, no logos, no gutters or panel borders. TOP LEFT: emerald botanical observatory gym at golden dawn, a young adult woman explorer with short dark hair and teal coat standing on a circular stone battle platform, glowing plant lanterns, distant mountains. TOP RIGHT: sapphire archive library gym with magical floating pages and waterfalls of blue light, a young adult man with round glasses, navy robe, on a stone circular battle platform. BOTTOM LEFT: amber volcanic forge gym with warm luminous brass mechanisms, an adult woman with copper hair and red cloak on a battle platform, nonviolent inviting. BOTTOM RIGHT: violet celestial lighthouse gym at twilight, an older adult man with silver hair and violet longcoat on a circular battle platform, stars reflected in calm water. Consistent sophisticated pixel art, rich atmospheric depth, clean readable pixel clusters, cinematic lighting, jewel emerald blue amber violet, premium original RPG game art. Characters relatively small occupying 20 percent of their tile height, environment dominant; no creatures, no UI. This is a reusable sprite background atlas, so exact even quadrants are essential.”
 
-## `assets/creatures-v2.png`
+## `docs/assets/creatures-v2.png`
 
 Se realizó una segunda pasada de edición para conservar las cuatro identidades y dar a cada sprite margen transparente completo dentro de su cuadrante. Se exigió que alas, colas, astas y destellos no cruzaran las líneas centrales del atlas. Esta es la versión utilizada en el sitio.
 
