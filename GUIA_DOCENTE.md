@@ -43,6 +43,12 @@ Orion nos espera en el Faro para encender la última luz. El desafío será tran
 
 Al superar el gimnasio podrán capturar a Asterion. Si completan las cuatro capturas, la Liga volverá a brillar. Revisen también la bitácora: sus cuatro reflexiones pueden convertirse en el inicio de una secuencia de aula invertida propia. Actividad opcional y sin efecto en sus calificaciones.
 
+## Diálogos y batalla retro
+
+El escenario aparece arriba y el retrato con el diálogo debajo. Un toque completa el texto; el botón de continuar avanza. También se puede usar Enter o Espacio. Las respuestas activan un efecto y luego una explicación; durante el efecto no se aceptan más respuestas. La pista y la recuperación se usan una vez por combate.
+
+El botón ◫ de la barra superior reduce el movimiento. El sonido es opcional. Se puede consultar la preparación y retomar el mismo combate desde su última escena. La partida conserva aciertos y explicaciones pendientes al recargar.
+
 ## Publicar y acompañar
 
 - Adjuntar el enlace público de AulaDex a los anuncios; añadir solo la clave de la semana correspondiente.

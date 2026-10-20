@@ -1,4 +1,32 @@
 # Dirección de arte y especificaciones de generación
++
+
+## Rediseño retro · 20 de octubre de 2026
+
+Herramienta integrada de generación de imágenes. Archivos finales copiados sin editar los píxeles; el juego recorta los atlas y normaliza las poses mediante CSS. Los espacios vacíos de los personajes tienen canal alfa transparente. Los fondos contienen solamente escenarios. Los retratos del jugador proceden del mismo sprite que combate.
+
+### docs/assets/retro-backgrounds.png
+
+Prompt completo:
+
+Use case: stylized-concept. Asset type: original 16-bit JRPG battle background atlas for an educational fantasy browser game. Make ONE landscape image arranged as an EXACT seamless 2-column by 2-row grid, four equal rectangular cells with NO borders or gutters. Each cell is a separate battle arena, camera side-on with flat foreground floor for combatants, open uncluttered center, absolutely NO people, creatures, text or UI. Top-left botanical observatory with hanging plants, ancient glass dome, turquoise sky and golden dawn, mossy stone battle floor. Top-right sapphire blue library with bookshelves, luminous crystal windows, moonlit stone floor. Bottom-left warm copper forge with anvil, embers and distant machinery, open stone floor. Bottom-right lavender starlit lighthouse terrace above a cosmic coast, pale purple stone floor. TRUE crisp SNES-era hand-placed pixel art, visible square pixels, limited color palette per scene, clean silhouettes, no painterly detail, no gradients or blur, no anti-aliasing. Each scene reads at native 320 by 180 pixel scale. The four cells fill the image exactly. Original art, no existing game characters.
+
+### docs/assets/retro-trainers.png
+
+Prompt completo:
+
+Use case: stylized-concept. Asset type: transparent PNG sprite sheet for a retro 16-bit JRPG, exactly FOUR COLUMNS and SIX ROWS of equal square cells (24 sprites). Transparent background everywhere. Each column contains one consistent adult gym trainer across all six poses. Column 1 Lia: woman with dark short hair, teal emerald long explorer coat and gold trim, tan skin. Column 2 Teo: young adult man with black hair and glasses, cobalt blue scholar coat, book. Column 3 Ada: adult woman short copper red hair, orange red forge jacket and sturdy boots. Column 4 Orion: older adult man silver hair, deep violet cloak and star ornament. ALL figures full body, clean readable expressive chunky pixel art, about 70% of each cell height, centered consistently, feet same baseline, generous transparent margins, no sprite extends into another cell. SIX ROWS from top to bottom: row1 neutral idle stance, row2 speaking with raised open hand and expressive open mouth, row3 casting an energy attack with extended arm aimed LEFT, row4 defending with forearm raised before body, row5 recoiling from a hit, row6 respectful victory salute. Consistent scale and identity in every row. True coarse 16-bit pixel art with strong outlines and limited colors, 48x64 pixel character feel scaled sharply; no painterly detail, smooth gradients, text, labels, grid lines, background objects, or existing game characters. Single portrait orientation sheet.
+
+### docs/assets/retro-players.png
+
+Prompt completo:
+
+Use case: stylized-concept. Asset type: transparent PNG sprite sheet for original 16-bit JRPG, exact FOUR COLUMNS and TWO ROWS of equal square cells (8 sprites), no gutters or borders. Each column is one consistent adult learner adventurer. Column1 Sendero: warm brown skin, curly dark hair, forest green coat and compass. Column2 Nexo: medium skin, straight black hair, glasses, blue coat, notebook at belt. Column3 Brasa: fair skin, short auburn hair, red copper jacket, androgynous adult. Column4 Aurora: dark skin, silver braid, violet cloak, older woman. Row1 neutral ready stance seen three quarters facing RIGHT; row2 attack casting stance arm extended RIGHT. All full body, equal size, feet same baseline, centered inside own cell with generous transparent margins, about70% cell height. Chunky visible pixel art SNES look, strong dark outlines, limited palette, 48x64 character feel sharply scaled; NO smooth illustration, anti-aliasing, text, labels, shadows outside cells, grid, or background. Transparent alpha background.
+
+Las seis filas del atlas de entrenadores no tienen idéntico margen útil: los encuadres CSS de cada pose evitan mostrar los pies de la fila anterior.
+
+Fuente local: Pixelify Sans 400, paquete @fontsource/pixelify-sans, licencia SIL Open Font License incluida en docs/assets/Pixelify-OFL.txt. Efectos e iconos de interfaz realizados en CSS/HTML; audio sintético opcional mediante Web Audio.
+
 
 ## `docs/assets/avatars.png`
 

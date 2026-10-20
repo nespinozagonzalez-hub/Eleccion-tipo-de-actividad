@@ -2,6 +2,22 @@
 
 Revisión: 20 de octubre de 2026. Navegador Chromium, ejecución real del sitio estático.
 
+## Rediseño retro completo
+
+- Fondos independientes para los cuatro gimnasios, cuatro avatares PNG y seis poses por entrenador. Fuente Pixelify Sans servida desde el propio sitio.
+- Presentación, decisión, animación y retroalimentación en cajas RPG; completar texto con un toque y avanzar con botón o teclado. Se verificó Enter en el diálogo inicial.
+- Acierto, contraataque, defensa, impacto, pista y recuperación; las respuestas quedan bloqueadas durante el efecto. La cantidad recuperada respeta el máximo de 100.
+- Se recargó durante un ataque correcto: el sello permanece roto y la explicación queda pendiente, sin aplicar el resultado dos veces. También se recuperó una derrota para volver a prepararse.
+- Recorrer los cuatro gimnasios, registrar las cuatro capturas y repetir un gimnasio conserva la colección sin duplicados.
+- Consultar la preparación permite retomar la misma batalla; las pistas permanecen visibles mientras corresponde la decisión.
+- Se verificaron movimiento reducido manual y preferencia del sistema, con texto completo y sin animaciones.
+- Se revisaron introducción, personaje, ruta, BioDex, bitácora, guía, gimnasio, preparación y combate a 320, 390, 768, 1440 y 1920 píxeles. Se ajustaron títulos, contador y tarjetas para impedir desbordamientos o recortes.
+- La prueba del personaje validó alias, cuatro avatares, rasgo, lema, foco al escribir, guardado, edición, escape de HTML y migración real de una partida anterior.
+- La prueba completa no registró errores JavaScript ni recursos fallidos.
+- Las siete pruebas de regresión de `tests/core.test.mjs` pasan con Node y no requieren dependencias adicionales.
+
+## Verificación de funciones conservadas
+
 Ampliación con prólogo y personajes: se comprobó la entrada previa a los gimnasios, la validación del alias, los cuatro avatares, sello y lema, la edición posterior, el traslado del perfil en copias JSON y la migración de partidas anteriores sin perder capturas, claves ni reflexiones. Se revisaron las pantallas de inicio y personaje entre 320 y 1440 píxeles, incluida la escritura con una altura de ventana reducida para simular el teclado móvil. La pantalla no se reconstruye mientras se escribe y mantiene el foco del campo.
 
 - Los cuatro gimnasios permanecen cerrados hasta ingresar su clave. Una clave incorrecta muestra un aviso y no habilita el acceso.
