@@ -2,6 +2,10 @@
 
 Revisión: 20 de octubre de 2026. Navegador Chromium, ejecución real del sitio estático.
 
+## Contraste sobre imágenes
+
+Se reforzó el degradado oscuro del prólogo y se añadió un fondo negro difuminado detrás de la carta. Las coordenadas, nombres de combatientes, turno y números de escena tienen superficies oscuras para conservar contraste sobre zonas claras. Se comprobó que la carta permanece completa a 320, 390, 768 y 1440 píxeles y se generó una captura limpia de bienvenida. No se registraron errores JavaScript ni recursos fallidos en esta revisión visual.
+
 ## Reinicio y revisión del banco de preguntas
 
 - Se comprobó que el botón de reinicio está disponible en barra lateral, guía y ventana de partida. La confirmación describe qué se borra y permite descargar un respaldo.
