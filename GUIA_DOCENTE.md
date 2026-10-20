@@ -1,6 +1,6 @@
 # AulaDex · Guía de lanzamiento
 
-La Semana 0 puede usarse para presentar el enlace, explorar la ruta y elegir un alias. Los cuatro gimnasios representan las Semanas 1–4; se abren al compartir sus claves, sin fechas automáticas. Estos retos complementan los contenidos oficiales del curso.
+La Semana 0 puede usarse para presentar el enlace, ver el prólogo, crear el personaje y explorar la ruta. Los cuatro gimnasios representan las Semanas 1–4; se abren al compartir sus claves, sin fechas automáticas. Estos retos complementan los contenidos oficiales del curso.
 
 | Semana | Gimnasio | Foco de refuerzo | Clave | Bioforma |
 |---|---|---|---|---|
@@ -15,7 +15,7 @@ La Semana 0 puede usarse para presentar el enlace, explorar la ruta y elegir un 
 
 Cada semana abrirá un gimnasio donde podrán conocer una breve historia, prepararse con ideas sobre aula invertida y desafiar a un entrenador resolviendo decisiones docentes. Al superar la batalla podrán capturar una bioforma y sumarla a su colección.
 
-La participación es completamente opcional y no afecta las calificaciones. Desde esta semana pueden explorar la ruta y conocer cómo funciona; la primera clave llegará junto al anuncio de la Semana 1. El progreso se guarda en su navegador. Si cambian de equipo, usen la opción «Administrar partida» para trasladar una copia.
+La participación es completamente opcional y no afecta las calificaciones. Desde esta semana pueden crear su entrenador/a con nombre o alias, elegir un avatar y explorar la ruta; la primera clave llegará junto al anuncio de la Semana 1. El progreso se guarda en su navegador. Si cambian de equipo, usen la opción «Administrar partida» para trasladar una copia.
 
 ## Anuncios semanales, listos para adaptar
 
@@ -49,7 +49,7 @@ Al superar el gimnasio podrán capturar a Asterion. Si completan las cuatro capt
 - El relato admite un orden semanal flexible. Cada clave abre únicamente su gimnasio; no exige haber superado otro.
 - No se exige demostrar velocidad ni ganar al primer intento. Los errores muestran una pista; pueden releer las escenas y reintentar.
 - Las reflexiones se guardan en el dispositivo del participante, no se reciben automáticamente. Si se desea compartirlas, solicitar que copien un fragmento en el foro del curso; no es un requisito del juego.
-- El alias es opcional. No existe registro de cuentas ni conexión a Google Sheets en esta versión breve.
+- El nombre o alias de entrenador/a forma parte de la creación del personaje; no requiere correo ni contraseña. No existe registro de cuentas ni conexión a Google Sheets en esta versión breve.
 - Al renombrar el repositorio, usar la nueva URL de GitHub Pages en los anuncios. Los recursos internos usan rutas relativas.
 
 Las claves están en un repositorio público. Sirven para dosificar la publicación semanal, no para controlar una evaluación.

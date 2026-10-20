@@ -1,9 +1,13 @@
 export const SAVE_KEY='auladex-liga-invertida-v1';
 const ids=v=>Array.isArray(v)?[...new Set(v.filter(n=>Number.isInteger(n)&&n>=1&&n<=4))]:[];
-export function newState(){return {version:1,name:'',unlocked:[],completed:[],captured:[],prepared:{},notes:{},sound:false,battle:null};}
+export function newState(){return {version:1,name:'',avatar:1,trait:'curiosidad',motto:'',profileReady:false,unlocked:[],completed:[],captured:[],prepared:{},notes:{},sound:false,battle:null};}
 export function normalizeState(v){
  if(!v||typeof v!=='object'||v.version!==1)throw new Error('Este archivo no es una partida de AulaDex compatible.');
  const s=newState();s.name=typeof v.name==='string'?v.name.slice(0,32):'';s.unlocked=ids(v.unlocked);
+ s.avatar=Number.isInteger(v.avatar)&&v.avatar>=1&&v.avatar<=4?v.avatar:1;
+ s.trait=['curiosidad','ingenio','constancia','colaboracion'].includes(v.trait)?v.trait:'curiosidad';
+ s.motto=typeof v.motto==='string'?v.motto.slice(0,80):'';
+ s.profileReady=v.profileReady===true&&s.name.trim().length>=2;
  s.completed=ids(v.completed).filter(id=>s.unlocked.includes(id));s.captured=ids(v.captured).filter(id=>s.completed.includes(id));
  for(let id=1;id<=4;id++){s.prepared[id]=Math.max(0,Math.min(3,Math.floor(Number(v.prepared?.[id])||0)));s.notes[id]=typeof v.notes?.[id]==='string'?v.notes[id].slice(0,1200):'';}
  s.sound=v.sound===true;

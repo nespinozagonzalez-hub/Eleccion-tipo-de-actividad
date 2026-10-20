@@ -2,6 +2,8 @@
 
 Revisión: 20 de octubre de 2026. Navegador Chromium, ejecución real del sitio estático.
 
+Ampliación con prólogo y personajes: se comprobó la entrada previa a los gimnasios, la validación del alias, los cuatro avatares, sello y lema, la edición posterior, el traslado del perfil en copias JSON y la migración de partidas anteriores sin perder capturas, claves ni reflexiones. Se revisaron las pantallas de inicio y personaje entre 320 y 1440 píxeles, incluida la escritura con una altura de ventana reducida para simular el teclado móvil. La pantalla no se reconstruye mientras se escribe y mantiene el foco del campo.
+
 - Los cuatro gimnasios permanecen cerrados hasta ingresar su clave. Una clave incorrecta muestra un aviso y no habilita el acceso.
 - Se recorren las 12 escenas y las 16 decisiones; las ventanas de fuentes permiten acceder a las referencias y sus enlaces de lectura.
 - Se probaron respuestas correctas e incorrectas, bloqueo de doble respuesta, pistas, recuperación y reinicio tras una derrota.

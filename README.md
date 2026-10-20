@@ -14,6 +14,7 @@ Abre `http://localhost:8765/`. GitHub Pages está configurado para publicar la c
 
 ## Contenido y funcionamiento
 
+- Prólogo inicial y creación de personaje: alias, cuatro avatares, sello de aventura y lema opcional. El personaje aparece en pasaporte y batallas; puede editarse después.
 - Semana 1: comprender el modelo · El Observatorio · Folira.
 - Semana 2: preparación previa · El Archivo Azul · Noxira.
 - Semana 3: aplicación durante la clase · La Forja Viva · Ignar.
@@ -26,13 +27,15 @@ Abre `http://localhost:8765/`. GitHub Pages está configurado para publicar la c
 
 ## Partida
 
-`localStorage`, clave estable `auladex-liga-invertida-v1`. Se conserva al cambiar la ruta del repositorio dentro del mismo dominio y navegador. Copia JSON con importación validada y confirmación antes de sustituir la partida; nombre opcional. La bitácora puede imprimirse o guardarse como PDF desde el navegador.
+`localStorage`, clave estable `auladex-liga-invertida-v1`. Se conserva al cambiar la ruta del repositorio dentro del mismo dominio y navegador. Copia JSON con importación validada y confirmación antes de sustituir la partida; alias de entrenador/a. Las partidas anteriores completan el perfil conservando claves, capturas y bitácora. La bitácora puede imprimirse o guardarse como PDF desde el navegador.
 
 El navegador puede impedir el almacenamiento, especialmente dentro de ciertos iframes o modos privados. La interfaz avisa si el guardado falla; abrir el enlace directamente y descargar una copia permite conservar el progreso. Las claves son una forma de organizar el acceso semanal, no un mecanismo de seguridad: forman parte de un cliente estático público.
 
 ## Editar
 
 - `docs/content.js`: textos, casos, respuestas, citas, códigos, criaturas e insignias.
+- `docs/profile.js` y `docs/profile.css`: prólogo y creador de personaje.
+- `docs/assets/avatars.png`: atlas original de cuatro retratos.
 - `docs/app.js`: interfaz y navegación.
 - `docs/core.js`: normalización de partidas y lógica de turnos.
 - `docs/styles.css`: responsive, ilustraciones, animación y estilos de impresión.
@@ -43,6 +46,6 @@ Fuentes verificadas el 20 de octubre de 2026: Abeysekera y Dawson (2015), van Al
 
 ## Arte
 
-Dos atlas originales creados con la herramienta integrada de generación de imágenes. Se conservan como recursos locales, sin dependencias de enlaces temporales. Las especificaciones de producción están en `ARTE.md`.
+Tres atlas originales creados con la herramienta integrada de generación de imágenes. Se conservan como recursos locales, sin dependencias de enlaces temporales. Las especificaciones de producción están en `ARTE.md`.
 
 La actividad anterior del repositorio permanece disponible en el historial de Git.
