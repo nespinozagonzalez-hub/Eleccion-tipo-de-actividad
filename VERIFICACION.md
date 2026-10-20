@@ -2,6 +2,16 @@
 
 Revisión: 20 de octubre de 2026. Navegador Chromium, ejecución real del sitio estático.
 
+## Reinicio y revisión del banco de preguntas
+
+- Se comprobó que el botón de reinicio está disponible en barra lateral, guía y ventana de partida. La confirmación describe qué se borra y permite descargar un respaldo.
+- Abrir la confirmación o cancelarla conserva exactamente la partida. Confirmar vuelve al prólogo y permite crear otro personaje con los cuatro gimnasios cerrados.
+- Solo se sustituye la clave de AulaDex: se verificó que otra clave del navegador permanece intacta. Se conservan las preferencias de sonido y movimiento.
+- Se descargó una copia antes de reiniciar y se restauraron el personaje, las cuatro capturas y las reflexiones desde esa copia.
+- Se simuló un fallo de almacenamiento: el reinicio no modifica la aventura y muestra un aviso. También se reinició durante un efecto de combate, comprobando que el temporizador no recupera el estado anterior.
+- La confirmación se revisó a 320 y 390 píxeles, sin desbordamiento.
+- Se revisaron manualmente los 16 casos, sus pistas y explicaciones. Las alternativas representan acciones docentes plausibles y tienen entre 0 y 2 palabras de diferencia dentro de cada pregunta. La respuesta correcta no es sistemáticamente la más larga; sus posiciones siguen equilibradas en A: 5, B: 6, C: 5.
+
 ## Rediseño retro completo
 
 - Fondos independientes para los cuatro gimnasios, cuatro avatares PNG y seis poses por entrenador. Fuente Pixelify Sans servida desde el propio sitio.

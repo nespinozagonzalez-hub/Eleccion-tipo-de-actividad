@@ -57,6 +57,14 @@ El navegador puede impedir el almacenamiento, especialmente dentro de ciertos if
 
 Fuentes verificadas el 20 de octubre de 2026: Abeysekera y Dawson (2015), van Alten et al. (2019), Brame (2016), Freeman et al. (2014), Nicol y Macfarlane-Dick (2006). Citas y enlaces se presentan en las escenas y en la biblioteca. La narrativa, los casos y las aplicaciones son creación de esta experiencia. Las evidencias STEM y las propuestas teóricas se presentan con su alcance explícito.
 
+## Reiniciar la aventura
+
+El botón «Reiniciar mi aventura» está en la barra lateral, «Cómo jugar» y «Tu partida». Primero muestra una confirmación y permite descargar una copia. Confirmar reinicia el personaje, desbloqueos, insignias, colección, preparación y reflexiones; conserva las preferencias de sonido y movimiento. Solo sustituye la clave local de AulaDex. Si falla el almacenamiento, conserva la aventura actual.
+
+## Preguntas de aplicación
+
+Las 16 preguntas plantean casos con un propósito concreto y tres decisiones docentes plausibles. Las alternativas tienen extensión semejante; sus diferencias se basan en adecuación al objetivo, evidencia y condiciones del caso. La respuesta correcta no ocupa sistemáticamente la opción más larga. Se conservan las posiciones de respuesta para mantener compatibles las batallas guardadas: A aparece 5 veces, B 6 y C 5. El orden de las preguntas varía en cada nuevo combate.
+
 ## Verificar la lógica
 
 ```sh

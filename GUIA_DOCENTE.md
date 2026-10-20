@@ -49,6 +49,12 @@ El escenario aparece arriba y el retrato con el diálogo debajo. Un toque comple
 
 El botón ◫ de la barra superior reduce el movimiento. El sonido es opcional. Se puede consultar la preparación y retomar el mismo combate desde su última escena. La partida conserva aciertos y explicaciones pendientes al recargar.
 
+## Reiniciar para volver a probar
+
+«Reiniciar mi aventura» aparece en «Tu partida», «Cómo jugar» y la barra lateral de escritorio. Abre una confirmación y ofrece descargar una copia antes de borrar. Al confirmar, se vuelve al prólogo para crear otro personaje y abrir de nuevo los gimnasios. Las copias descargadas permiten recuperar la aventura anterior.
+
+El banco de 16 casos utiliza alternativas de extensión semejante y decisiones docentes plausibles. La mejor respuesta depende de las condiciones del caso. Cada explicación contrasta el foco de las alternativas; las pistas orientan el criterio de decisión.
+
 ## Publicar y acompañar
 
 - Adjuntar el enlace público de AulaDex a los anuncios; añadir solo la clave de la semana correspondiente.

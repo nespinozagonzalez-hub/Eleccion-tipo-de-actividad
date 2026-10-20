@@ -50,3 +50,7 @@ html[data-motion=reduced] *,html[data-motion=reduced] *:before,html[data-motion=
 /* The Brasa attack cell leaves a small neighboring cape at its right edge. */
 .rpg-battle[data-phase=effect][data-effect=correct] .learner-3{clip-path:inset(0 9% 0 0)}
 .hud-name strong,.combatant-name{overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.dialogue-meta strong,.trainer-welcome>span{min-width:0;overflow-wrap:anywhere}
+
+.restart-link{color:#efbb9f!important}.btn.danger{background:#c98066;color:#1b2834;border-color:#f7c2a0;box-shadow:3px 3px 0 var(--edge),inset -3px -3px 0 #915d4c}.btn.secondary.danger{background:#34343e;color:#f3c8ae;border-color:#b78d7a;box-shadow:3px 3px 0 var(--edge)}.sidebar .restart-link{font-size:12px;padding-top:3px}.library .button-row{justify-content:flex-start}
+
+@media(min-width:901px){.sidebar{overflow-y:auto;overscroll-behavior:contain}}
