@@ -55,6 +55,12 @@ El botón ◫ de la barra superior reduce el movimiento. El sonido es opcional. 
 
 El banco de 16 casos utiliza alternativas de extensión semejante y decisiones docentes plausibles. La mejor respuesta depende de las condiciones del caso. Cada explicación contrasta el foco de las alternativas; las pistas orientan el criterio de decisión.
 
+## Lectura y orientación
+
+La aventura usa letra clara por defecto. Desde «Aa», en la parte superior de cualquier pantalla, cada participante puede elegir entre lectura clara y letra retro. La elección queda guardada y no cambia su progreso. El arte conserva su estilo pixel art.
+
+Al capturar una bioforma, la tarjeta central de la ruta señala el gimnasio siguiente y su semana. Si falta la clave, conduce a su entrada para consultar el anuncio de Canvas. Si aún queda una captura por registrar o una batalla en curso, ofrece continuar ese paso primero.
+
 ## Publicar y acompañar
 
 - Adjuntar el enlace público de AulaDex a los anuncios; añadir solo la clave de la semana correspondiente.

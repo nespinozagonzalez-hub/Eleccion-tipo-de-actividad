@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {newState,normalizeState,startBattle,answerBattle,SAVE_KEY} from '../docs/core.js';
+import {newState,normalizeState,startBattle,answerBattle,nextAdventure,SAVE_KEY} from '../docs/core.js';
 import {GYMS} from '../docs/content.js';
 
 function encounter(){const battle=startBattle(1);return {battle,question:GYMS[0].questions[battle.order[0]]};}
@@ -33,4 +33,27 @@ test('the fourth seal stays broken when the victory screen is recovered',()=>{
 });
 test('invalid copies are rejected and stale battle data is discarded',()=>{
  assert.throws(()=>normalizeState({version:2}));assert.equal(normalizeState({...newState(),unlocked:[1],battle:{...startBattle(1),order:[0,0,1,2]}}).battle,null);
+});
+
+test('older saves use readable text and copies retain a chosen retro font',()=>{
+ const old={version:1,name:'Nico',profileReady:true,unlocked:[1,2],completed:[1],captured:[1],notes:{1:'Aplicar un caso'}};
+ assert.equal(normalizeState(old).font,'readable');
+ const retro=normalizeState({...old,font:'retro'});
+ assert.equal(normalizeState(JSON.parse(JSON.stringify(retro))).font,'retro');
+ assert.deepEqual(retro.captured,[1]);assert.equal(retro.notes[1],'Aplicar un caso');
+ assert.equal(normalizeState({...old,font:'unknown'}).font,'readable');
+});
+test('the route advances to the next gym even before its weekly key is entered',()=>{
+ const s={...newState(),unlocked:[1],completed:[1],captured:[1]};
+ assert.deepEqual(nextAdventure(s),{id:2,stage:'locked'});
+ assert.deepEqual(nextAdventure({...s,unlocked:[1,2]}),{id:2,stage:'ready'});
+ assert.deepEqual(nextAdventure({...s,unlocked:[1,2,3],completed:[1,2,3],captured:[1,2,3]}),{id:4,stage:'locked'});
+});
+test('a pending reward and an ongoing battle remain actionable from the route',()=>{
+ const s={...newState(),unlocked:[1,2],completed:[1],battle:startBattle(2)};
+ assert.deepEqual(nextAdventure(s),{id:1,stage:'capture'});
+ assert.deepEqual(nextAdventure({...s,captured:[1]}),{id:2,stage:'battle'});
+});
+test('four captures lead to the class plan even while replaying a completed gym',()=>{
+ assert.deepEqual(nextAdventure({...newState(),unlocked:[1,2,3,4],completed:[1,2,3,4],captured:[1,2,3,4],battle:startBattle(1)}),{id:4,stage:'finished'});
 });

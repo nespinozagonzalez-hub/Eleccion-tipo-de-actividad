@@ -2,6 +2,16 @@
 
 Revisión: 20 de octubre de 2026. Navegador Chromium, ejecución real del sitio estático.
 
+## Lectura y siguiente gimnasio
+
+- Letra clara por defecto en partidas nuevas y anteriores; Pixelify se conserva como opción retro desde «Aa» en prólogo, personaje y pantallas del juego.
+- Se comprobó el cambio de tipografía durante una batalla, sin cambiar sellos, concentración ni pregunta. Al cerrar la ventana, el foco vuelve al botón «Aa».
+- La elección persiste al recargar, exportar/importar una copia y reiniciar la aventura.
+- Tras capturar la primera bioforma, el centro de la ruta apunta al gimnasio 2, muestra su escenario y recuerda la clave de la Semana 2. La entrada sigue exigiendo la clave correcta.
+- Una captura pendiente tiene prioridad; después se ofrece retomar una batalla en curso. Las cuatro capturas llevan al plan de clase.
+- Se revisaron nueve pantallas con ambas tipografías a 320, 390, 768, 1440 y 1920 píxeles: sin desbordamiento horizontal, carta y globos narrativos completos dentro del escenario. No se registraron errores JavaScript ni recursos fallidos.
+- Pasan las once pruebas de regresión del núcleo, incluidas migración de tipografía y elección del siguiente destino.
+
 ## Contraste sobre imágenes
 
 Se reforzó el degradado oscuro del prólogo y se añadió un fondo negro difuminado detrás de la carta. Las coordenadas, nombres de combatientes, turno y números de escena tienen superficies oscuras para conservar contraste sobre zonas claras. Se comprobó que la carta permanece completa a 320, 390, 768 y 1440 píxeles y se generó una captura limpia de bienvenida. No se registraron errores JavaScript ni recursos fallidos en esta revisión visual.
@@ -10,7 +20,7 @@ Se reforzó el degradado oscuro del prólogo y se añadió un fondo negro difumi
 
 - Se comprobó que el botón de reinicio está disponible en barra lateral, guía y ventana de partida. La confirmación describe qué se borra y permite descargar un respaldo.
 - Abrir la confirmación o cancelarla conserva exactamente la partida. Confirmar vuelve al prólogo y permite crear otro personaje con los cuatro gimnasios cerrados.
-- Solo se sustituye la clave de AulaDex: se verificó que otra clave del navegador permanece intacta. Se conservan las preferencias de sonido y movimiento.
+- Solo se sustituye la clave de AulaDex: se verificó que otra clave del navegador permanece intacta. Se conservan las preferencias de sonido, movimiento y tipografía.
 - Se descargó una copia antes de reiniciar y se restauraron el personaje, las cuatro capturas y las reflexiones desde esa copia.
 - Se simuló un fallo de almacenamiento: el reinicio no modifica la aventura y muestra un aviso. También se reinició durante un efecto de combate, comprobando que el temporizador no recupera el estado anterior.
 - La confirmación se revisó a 320 y 390 píxeles, sin desbordamiento.
@@ -28,7 +38,7 @@ Se reforzó el degradado oscuro del prólogo y se añadió un fondo negro difumi
 - Se revisaron introducción, personaje, ruta, BioDex, bitácora, guía, gimnasio, preparación y combate a 320, 390, 768, 1440 y 1920 píxeles. Se ajustaron títulos, contador y tarjetas para impedir desbordamientos o recortes.
 - La prueba del personaje validó alias, cuatro avatares, rasgo, lema, foco al escribir, guardado, edición, escape de HTML y migración real de una partida anterior.
 - La prueba completa no registró errores JavaScript ni recursos fallidos.
-- Las siete pruebas de regresión de `tests/core.test.mjs` pasan con Node y no requieren dependencias adicionales.
+- Las once pruebas de regresión de `tests/core.test.mjs` pasan con Node y no requieren dependencias adicionales.
 
 ## Verificación de funciones conservadas
 

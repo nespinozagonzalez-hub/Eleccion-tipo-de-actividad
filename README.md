@@ -33,6 +33,12 @@ Los PNG independientes tienen poses de espera, habla, ataque, defensa, impacto y
 
 Consultar la preparación permite retomar la batalla. Una recarga durante un efecto recupera la retroalimentación pendiente, sin volver a aplicar daño ni perder el acierto.
 
+## Lectura y siguiente destino
+
+La tipografía clara es la opción inicial, también para partidas anteriores. El botón «Aa», disponible desde el prólogo y durante la aventura, permite elegir letra clara o Pixelify retro. La opción se guarda en el dispositivo, viaja en las copias JSON y se conserva al reiniciar. El arte, los personajes, los marcos y el logotipo mantienen la identidad retro en ambas opciones.
+
+La tarjeta central propone primero una captura pendiente, después una batalla en curso y, a continuación, el primer gimnasio sin capturar. Al registrar la primera bioforma apunta al gimnasio 2, aunque todavía falte su clave semanal; el destino, el escenario y la indicación de Canvas avanzan juntos. Las cuatro capturas conducen al plan de clase.
+
 ## Partida
 
 `localStorage`, clave estable `auladex-liga-invertida-v1`. Se conserva al cambiar la ruta del repositorio dentro del mismo dominio y navegador. Copia JSON con importación validada y confirmación antes de sustituir la partida; alias de entrenador/a. Las partidas anteriores completan el perfil conservando claves, capturas y bitácora. La bitácora puede imprimirse o guardarse como PDF desde el navegador.
@@ -45,6 +51,7 @@ El navegador puede impedir el almacenamiento, especialmente dentro de ciertos if
 - `docs/profile.js` y `docs/profile.css`: prólogo y creador de personaje.
 - `docs/combat.js`: interfaz del combate, retratos de diálogo y texto progresivo.
 - `docs/retro.css`: sistema visual retro, poses, efectos, móvil y movimiento reducido.
+- `docs/reading.css`: tipografía clara, selector de lectura y tamaños de texto.
 - `docs/assets/retro-players.png`: cuatro avatares con poses de espera y ataque; también genera los retratos mediante CSS.
 - `docs/app.js`: interfaz y navegación.
 - `docs/core.js`: normalización de partidas y lógica de turnos.
@@ -59,7 +66,7 @@ Fuentes verificadas el 20 de octubre de 2026: Abeysekera y Dawson (2015), van Al
 
 ## Reiniciar la aventura
 
-El botón «Reiniciar mi aventura» está en la barra lateral, «Cómo jugar» y «Tu partida». Primero muestra una confirmación y permite descargar una copia. Confirmar reinicia el personaje, desbloqueos, insignias, colección, preparación y reflexiones; conserva las preferencias de sonido y movimiento. Solo sustituye la clave local de AulaDex. Si falla el almacenamiento, conserva la aventura actual.
+El botón «Reiniciar mi aventura» está en la barra lateral, «Cómo jugar» y «Tu partida». Primero muestra una confirmación y permite descargar una copia. Confirmar reinicia el personaje, desbloqueos, insignias, colección, preparación y reflexiones; conserva las preferencias de sonido, movimiento y tipografía. Solo sustituye la clave local de AulaDex. Si falla el almacenamiento, conserva la aventura actual.
 
 ## Preguntas de aplicación
 

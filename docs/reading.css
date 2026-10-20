@@ -1,0 +1,110 @@
+/* Reading is the default. Pixel art, frames and the logo keep the game identity. */
+.font-button{font:600 18px/1 Arial,sans-serif;letter-spacing:-1px}
+.onboard-actions{display:flex;align-items:center;gap:16px;flex-shrink:0}
+.onboard-actions .text-btn{font-size:14px;white-space:nowrap}
+.font-options{display:grid;gap:12px;margin:22px 0}
+.font-option{display:grid;gap:8px;text-align:left;padding:18px;background:#172c3a;color:#fff1d1;border:2px solid #829b8c;box-shadow:3px 3px 0 #091522;font:16px/1.6 system-ui,-apple-system,'Segoe UI',Arial,sans-serif}
+.font-option[aria-pressed=true]{border-color:#f1cb76;background:#29473f}
+.font-option:hover{border-color:#ffdfa0}
+.font-option strong{font-size:21px;line-height:1.3}
+.font-option span{color:#d5e0cf}
+.font-option small{color:#ffdf97;font-size:13px}
+.font-preview-retro strong{font-family:Pixelify,'Courier New',monospace;font-size:25px;font-weight:400}
+
+html[data-font=readable]{--sans:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;--serif:var(--sans);--mono:var(--sans)}
+html[data-font=readable] body{font-size:16px;line-height:1.7}
+html[data-font=readable] h1,html[data-font=readable] h2,html[data-font=readable] h3{font-weight:650;line-height:1.2}
+html[data-font=readable] h1 em{font-weight:650}
+html[data-font=readable] h1,html[data-font=readable] .prologue-copy h1{font-size:clamp(30px,3.6vw,48px)}
+html[data-font=readable] .character-heading h1,html[data-font=readable] .gate-copy h1,html[data-font=readable] .novel-page h1,html[data-font=readable] .capture-panel h1{font-size:clamp(28px,3.1vw,40px)}
+html[data-font=readable] h2{font-size:28px}
+html[data-font=readable] .hero-copy h2{font-size:clamp(26px,2.8vw,36px)}
+html[data-font=readable] .card-content h3{font-size:23px;line-height:1.25}
+html[data-font=readable] .section-heading h2,html[data-font=readable] .journal-card h2,html[data-font=readable] .library h2,html[data-font=readable] .guide-card h2{font-size:26px}
+html[data-font=readable] .brand>span{font-family:Pixelify,'Courier New',monospace}
+html[data-font=readable] .brand small{font-size:10px;letter-spacing:.8px}
+html[data-font=readable] .btn{font-size:16px;font-weight:600;white-space:normal}
+html[data-font=readable] .text-btn,html[data-font=readable] .profile-edit-link,html[data-font=readable] .card-link,html[data-font=readable] .source-link{font-size:14px;line-height:1.6}
+html[data-font=readable] .nav-item{font-size:15px}
+html[data-font=readable] .eyebrow,html[data-font=readable] .topbar .eyebrow,html[data-font=readable] .tag,html[data-font=readable] .optional-chip,html[data-font=readable] .card-region{font-size:11px;letter-spacing:.7px;line-height:1.6}
+html[data-font=readable] .prologue-copy>p,html[data-font=readable] .hero-copy p,html[data-font=readable] .guide-card p{font-size:16px;line-height:1.75}
+html[data-font=readable] .hero-copy p{max-width:410px}
+html[data-font=readable] .hero-caption,html[data-font=readable] .hero-coordinate,html[data-font=readable] .prologue-copy>small,html[data-font=readable] .prologue-coordinates,html[data-font=readable] .prologue-letter>span:last-child{font-size:12px;line-height:1.6;letter-spacing:.2px}
+html[data-font=readable] .prologue-letter p{font-size:clamp(20px,2.1vw,28px);line-height:1.5}
+html[data-font=readable] .prologue-steps{font-size:14px;line-height:1.6}
+html[data-font=readable] .trainer-welcome{font-size:14px}
+html[data-font=readable] .chapter-seal strong{font-size:34px}
+html[data-font=readable] .chapter-seal span{font-size:10px}
+html[data-font=readable] .card-content>p,html[data-font=readable] .dex-card>p:not(.eyebrow),html[data-font=readable] .capture-intro{font-size:15px;line-height:1.7}
+html[data-font=readable] .status-pill,html[data-font=readable] .week-label,html[data-font=readable] .dex-label{font-size:11px}
+html[data-font=readable] .card-content h3,html[data-font=readable] .card-content>p{min-height:0}
+html[data-font=readable] .field-note p,html[data-font=readable] .journal-card label,html[data-font=readable] .reward-note label,html[data-font=readable] textarea,html[data-font=readable] input{font-size:16px;line-height:1.7}
+html[data-font=readable] .lesson-text{font-size:17px;line-height:1.85}
+html[data-font=readable] .speech p,html[data-font=readable] .thinking p,html[data-font=readable] .creature-lore{font-size:19px;line-height:1.6}
+html[data-font=readable] .speech>span{font-size:16px}
+html[data-font=readable] .dialogue-copy{font-size:20px;line-height:1.65}
+html[data-font=readable] .dialogue-meta strong{font-size:20px;font-weight:650;line-height:1.3}
+html[data-font=readable] .dialogue-meta>span,html[data-font=readable] .command-label{font-size:12px;letter-spacing:.3px}
+html[data-font=readable] .rpg-commands .answer{font-size:16px;line-height:1.65}
+html[data-font=readable] .rpg-commands .answer>span{font-size:16px;font-weight:600;flex-shrink:0}
+html[data-font=readable] .support-commands .tool-btn{font-size:16px;font-weight:600;line-height:1.5}
+html[data-font=readable] .tool-btn>span{font-size:12px;font-weight:400;margin-left:0}
+html[data-font=readable] .review-command{font-size:14px;line-height:1.6}
+html[data-font=readable] .rpg-commands .hint-box{font-size:16px;line-height:1.7}
+html[data-font=readable] .hint-box strong{font-size:16px;font-weight:650}
+html[data-font=readable] .hud-name strong{font-size:22px;font-weight:650;line-height:1.3}
+html[data-font=readable] .hud-name>span{font-size:13px}
+html[data-font=readable] .hud-label,html[data-font=readable] .combatant-name,html[data-font=readable] .arena-location,html[data-font=readable] .turn-label{font-size:11px;letter-spacing:.3px}
+html[data-font=readable] .dialog-head h2{font-size:28px}
+html[data-font=readable] .character-form legend{font-size:20px;line-height:1.5}
+html[data-font=readable] .avatar-option>span:not(.avatar){font-size:15px}
+html[data-font=readable] .trait-option{font-size:15px}
+html[data-font=readable] .field-help,html[data-font=readable] .character-submit>span,html[data-font=readable] .character-preview>small{font-size:12px;line-height:1.7}
+html[data-font=readable] .character-preview h2{font-size:28px}
+html[data-font=readable] .credential-trait{font-size:13px}
+html[data-font=readable] .character-preview>p:not(.eyebrow){font-size:17px}
+
+@media(max-width:1050px){
+ .onboard-top{flex-wrap:wrap}
+ .onboard-top>.eyebrow{order:3;flex-basis:100%}
+ html[data-font=readable] .topbar{height:auto;min-height:86px;gap:14px;padding-top:14px;padding-bottom:14px}
+}
+@media(max-width:650px){
+ .onboard-actions{gap:12px}
+ .onboard-actions .text-btn{font-size:13px}
+ .topbar{flex-wrap:wrap}
+ .topbar>div:first-child{flex-basis:100%}
+ .top-actions{width:100%;justify-content:flex-end}
+ .top-actions .icon-btn{width:38px;min-width:38px;height:38px}
+ .top-actions .optional-chip{display:inline-block;margin-right:auto}
+ html[data-font=readable] .topbar .eyebrow{font-size:10px}
+ html[data-font=readable] .page-intro h1{font-size:30px}
+ html[data-font=readable] .hero-copy h2{font-size:27px}
+ html[data-font=readable] .hero-copy .btn{width:100%}
+ html[data-font=readable] .hero-coordinate{font-size:10px;max-width:calc(100% - 24px);text-align:right}
+ html[data-font=readable] .prologue-letter p{font-size:22px;line-height:1.5}
+ html[data-font=readable] .prologue-steps{gap:12px;font-size:12px}
+ html[data-font=readable] .prologue-steps b{margin-right:4px}
+ html[data-font=readable] .prologue-letter>.eyebrow{font-size:10px}
+ html[data-font=readable] .gym-card .card-content h3{font-size:21px}
+ html[data-font=readable] .gym-card .card-content>p{font-size:14px}
+ html[data-font=readable] .gym-card .card-region{font-size:10px}
+ html[data-font=readable] .gym-card .status-pill{font-size:10px}
+ html[data-font=readable] .speech p,html[data-font=readable] .thinking p{font-size:18px;line-height:1.6}
+ html[data-font=readable] .dialogue-copy{font-size:18px;line-height:1.65}
+ html[data-font=readable] .dialogue-meta strong{font-size:19px}
+ html[data-font=readable] .dialogue-meta>span{font-size:11px}
+ html[data-font=readable] .hud-name strong{font-size:18px}
+ html[data-font=readable] .hud-name>span{font-size:11px}
+ html[data-font=readable] .hud-label{font-size:9px}
+ html[data-font=readable] .combatant-name,html[data-font=readable] .arena-location,html[data-font=readable] .turn-label{font-size:10px}
+ html[data-font=readable] .section-heading{flex-wrap:wrap}
+ html[data-font=readable] .section-heading>.small{font-size:12px}
+ html[data-font=readable] .font-option{padding:15px}
+}
+@media(max-width:360px){
+ html[data-font=readable] .page-intro h1{font-size:27px}
+ html[data-font=readable] .prologue-letter p{font-size:20px}
+ html[data-font=readable] .prologue-coordinates{font-size:10px}
+ html[data-font=readable] .gym-card .card-content h3{font-size:20px}
+}
